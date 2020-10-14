@@ -1,0 +1,26 @@
+
+<div>
+      <form action="/register" method="post">
+        <div class="imgcontainer">
+          <img src="../img/loginIcon.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="formContainer">
+            <%- include ("./partials/errormessages") %>
+          <label for="uname"><i class="fas fa-user"></i><b> Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+      
+          <label for="psw"><i class="fas fa-unlock-alt"></i><b> Password</i></b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+      
+          <button class="loginBtn" type="submit">Register</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#616060">
+          <a type="button" class="signUpbtn" href="/login">Log In</a>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
