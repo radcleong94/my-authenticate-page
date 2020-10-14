@@ -18,4 +18,4 @@ $ npm run start
 
 ### Connect MongoDB
 
-install dotenv and add your MongoDB password in it.Then connecet your MongoDB URI local or Atlas at app.js 
+install dotenv and add your MongoDB password in it.Then connect your MongoDB URI local or Atlas at app.js 
