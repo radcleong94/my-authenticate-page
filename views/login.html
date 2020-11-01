@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticate login</title>
+    <style>
+        body{
+           margin:0;
+           padding:0;
+           box-sizing: border-box; 
+           background-color: rgb(238, 247, 255);
+         
+        }
+
+        div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:4rem;
+        }
+        h1{   
+            letter-spacing: 3px;
+            text-align: center;
+            font-size:3.5rem;
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn{
+            margin:10px;
+            padding:1rem 2rem;
+            font-size:1rem;
+            color:white;
+            background:rgb(11, 157, 255);
+            min-width:6rem;
+            border:none;
+            border-radius: 5px;
+             display: grid;
+             place-items: center;
+             cursor: pointer;
+        }
+        .btn:hover{
+            background-color: blue;
+        }
+        .footer{
+            text-align: center;
+            letter-spacing: 1px;
+            padding:24px 0;
+            background: rgb(36, 36, 36);
+            color:white;
+            transform: translateY(215%);
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome</h1>
+    </div>
+
+    <div>
+        <a class="btn" href="/login">Login</a>
+        <a class="btn" href='/register'>Register</a>
+    </div>
+    <div class="footer">
+        Authenticate pages by Leong&copy 2020
+    </div>
+</body>
+</html>

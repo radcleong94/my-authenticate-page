@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 let uri = 'mongodb+srv://radcleong94:'+ process.env.PW +'@clusterdb01.x0ndl.mongodb.net/EcommerceApp?retryWrites=true&w=majority';
 
-mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true,useUnifiedTopology: true})
 .then(()=>{
     console.log('connected to database ..')
 })

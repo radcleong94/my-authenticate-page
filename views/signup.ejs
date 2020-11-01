@@ -1,26 +1,37 @@
 
-<div>
-      <form action="/register" method="post">
-        <div class="imgcontainer">
-          <img src="../img/loginIcon.png" alt="Avatar" class="avatar">
-        </div>
-        <div class="formContainer">
-            <%- include ("./partials/errormessages") %>
-          <label for="uname"><i class="fas fa-user"></i><b> Username</b></label>
-          <input type="text" placeholder="Enter Username" name="username" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='./register.css'>
+  <title>register</title>
+</head>
+<body>
+    <form action="/register" method="post">
+    <div class="container">
+      <h1>Register <img src="./img/loginIcon.png" /></h1>
+      <%- include ("./partials/errormessages") %>
+      <hr>
       
-          <label for="psw"><i class="fas fa-unlock-alt"></i><b> Password</i></b></label>
-          <input type="password" placeholder="Enter Password" name="password" required>
+      <label for="uname"><i class="fas fa-user"></i><b> Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" required>
       
-          <button class="loginBtn" type="submit">Register</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
+      <label for="psw"><i class="fas fa-unlock-alt"></i><b> Password</i></b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="psw" required>
       
-        <div class="container" style="background-color:#616060">
-          <a type="button" class="signUpbtn" href="/login">Log In</a>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
+      <hr>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Register</button>
+      
     </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="/login">Sign in</a>.</p>
+    </div>
+  </form>
+</body>
+</html>

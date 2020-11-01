@@ -20,6 +20,9 @@ router.get('/profile',ensureAuthenticated,(req,res)=>{
   res.render('profile',{name:req.user.username})
 })
 
+router.get('/',(req,res)=>{
+  res.render('login')
+})
 // render login page
 router.get('/login',(req,res)=>{
   res.render('login')
@@ -92,6 +95,10 @@ router.post('/login',(req,res,next)=>{
     failureFlash:true
   })(req,res,next);
 });
+
+router.get('/chat',ensureAuthenticated,(req,res)=>{
+  res.render('chat')
+})
 
 // Logout
 router.get('/logout',(req,res)=>{
