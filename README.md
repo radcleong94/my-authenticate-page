@@ -1,4 +1,4 @@
-# Authenticate Login / register page with passport & node.js
+# Authenticate Login / register page with passport & Live Chat box by node.js
 
 This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
 
@@ -13,7 +13,7 @@ $ npm start
 # Or run with Nodemon
 $ npm run start
 
-# Visit http://localhost:3000
+# Visit http://localhost:8080
 ```
 
 ### Connect MongoDB
